@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Spin box</title>
+    <link rel="stylesheet" href="css/spinbox.css"/>
+</head>
+<body>
+
+<!-- // 기본형 -->
+<div id="spinbox" class="spinbox">
+    <input type="text" class="sbx_input">
+    <button type="button" class="sbx_plus">+</button>
+    <button type="button" class="sbx_minus">-</button>
+</div>
+
+<script type="text/javascript" src="js/jindo.js"></script>
+<script type="text/javascript" src="js/jindo_component.js"></script>
+<script type="text/javascript" src="js/spinbox.js"></script>
+<script type="text/javascript" src="js/spinbox_controller.js"></script>
+
+<script type="text/javascript">
+var oInstance = new SpinboxController("spinbox", {
+    nDefaultValue : 200,
+    nStep : 5,
+    nMax : 300,
+    nMin : 100
+});
+</script>
+
+</body>
+</html>

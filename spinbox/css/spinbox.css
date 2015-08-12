@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,
+a,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-size:14px;line-height:1.25em}
+body.s,.s input,.s textarea,.s select,.s button,.s table{font-family:Helvetica}
+body{position:relative;-webkit-text-size-adjust:none}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{text-decoration:none}
+table{border-collapse:collapse}
+hr{display:none !important}
+.blind,#u_skip{visibility:hidden;overflow:hidden;position:absolute;left:-999em;width:0;height:0;font-size:0;line-height:0}
+#content{clear:both;width:100%;}
+#content:after{display:block;clear:both;height:1px;margin-top:-1px;content:''}
+
+/* spinbox default */
+.spinbox{overflow: hidden;position:relative}
+.spinbox{display:block;clear:both;content:''}
+.spinbox button{padding:2px 5px;cursor:pointer}
+
+/* custom css */
+.spinbox.basic input{float:left;height:30px;width:150px;margin:0 3px 0 0;border:2px solid #ddd;font-size:16px;text-indent:6px}
+.spinbox.basic button{display:block;border:none;background:none;width:16px;height:16px;margin:0 0 2px;font-size:0.75em;color:#fff;background:#2d2d2d}
+
+.date{margin:10px 0 0}
+.date .spinbox{float:left}
+.date .year_input{float:left;width:80px;height:19px;margin:0 3px 0;border:1px solid #aaa}
+.date button{display:block;position:relative;width:16px;height:10px;margin:0 0 1px;background:-webkit-gradient(linear,0 0,0 100%,from(#f5f5f5),to(#ddd));border:1px solid #aaa;vertical-align:top}
+.date button:after{display:block;position:absolute;top:1px;left:2px;font-size:0.5em;line-height:0.75em;content:'▼'}
+.date .year_plus:after{top:0;content:'▲'}
+.date .month_select{height:21px;margin:0 0 0 3px}
+
+.clock{width:150px;margin:10px 0 0;text-align:center}
+.clock input{width:20px;text-align:center}
+.clock input,.clock button{display:block;margin:0 auto;}
+
+
+
+
+

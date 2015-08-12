@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>drag and drop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="_drag_area">
+        <div class="w50 coin _draggable" style="top:50px;left:150px">50원</div>
+        <div class="w100 coin _draggable" style="top:150px;left:150px">100원</div>
+        <div class="w500 coin _draggable" style="top:250px;left:150px">500원</div>
+        <div class="w1000 paper _draggable" style="top:350px;left:150px">1000원</div>
+    </div>
+    <div class="insert_coin _droppable" style="top:50px;left:500px">동전 투입구</div>
+    <div class="insert_papermoney _droppable" style="top:200px;left:500px">지폐 투입구</div>
+
+    <script type="text/javascript" src="js/jindo.js"></script>
+    <script type="text/javascript" src="js/jindo_component.js"></script>
+    <script type="text/javascript" src="js/draggable.js"></script>
+    <script type="text/javascript" src="js/droppable.js"></script>
+    <script type="text/javascript">
+        var _oSelf = this;
+        var oDraggable = new Draggable(".w50").attach({
+            dragEnd : function(oCustomEvent){
+                if(true === _oSelf.oDroppable.isMouseOverDropArea(oCustomEvent.pos())){
+                    alert("drop");
+                }else{
+                    alert("out");
+                }
+            }
+        });
+        var oDraggable2 = new Draggable(".w100").attach({
+            dragEnd : function(oCustomEvent){
+                if(true === _oSelf.oDroppable.isMouseOverDropArea(oCustomEvent.pos())){
+                    alert("drop");
+                }else{
+                    alert("out");
+                }
+            }
+        });
+        var oDraggable3 = new Draggable(".w500").attach({
+            dragEnd : function(oCustomEvent){
+                if(true === _oSelf.oDroppable.isMouseOverDropArea(oCustomEvent.pos())){
+                    alert("drop");
+                }else{
+                    alert("out");
+                }
+            }
+        });
+        var oDraggable4 = new Draggable(".w1000").attach({
+            dragEnd : function(oCustomEvent){
+                if(true === _oSelf.oDroppable2.isMouseOverDropArea(oCustomEvent.pos())){
+                    alert("drop");
+                }else{
+                    alert("out");
+                }
+            }
+        });
+
+        var oDroppable = new Droppable(".insert_coin");
+        var oDroppable2 = new Droppable(".insert_papermoney");
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,
+a,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-size:14px;line-height:1.25em}
+body.s,.s input,.s textarea,.s select,.s button,.s table{font-family:Helvetica}
+body{position:relative;-webkit-text-size-adjust:none}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{text-decoration:none}
+table{border-collapse:collapse}
+hr{display:none !important}
+.blind,#u_skip{visibility:hidden;overflow:hidden;position:absolute;left:-999em;width:0;height:0;font-size:0;line-height:0}
+#content{clear:both;width:100%;}
+#content:after{display:block;clear:both;height:1px;margin-top:-1px;content:''}
+
+/* drag  basic */
+._drag_area{position:relative;}
+._draggable{position:absolute;cursor:pointer}
+
+/* drop basic */
+._droppable{position:absolute}
+
+/* drag $ drop custom */
+._draggable, ._droppable{display:-webkit-box;box-sizing:border-box;-webkit-box-pack:center;-webkit-box-align:center}
+
+/* Money */
+.coin{width:50px;height:50px;border-radius:25px;background:pink}
+.paper{width:150px;height:50px;background:lightblue}
+
+.insert_coin{width:80px;height:80px;border-radius:40px;background:hotpink;text-align:center}
+.insert_papermoney{width:150px;height:50px;background:dodgerblue}
+
+
